@@ -23,3 +23,27 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 // Through NodeJS we will be making networking application (backend application), the networking applications are used to communicate with other machines over the internet using protocols (http, webrtc etc) => the other machines over the internet will be communicating with my networking app based on some protocol and hence sharing the data with them over the internet and hitting some business logic
 
 // Using NodeJS the networking application that we will build will based on the http protocol / we will called that application as http server 
+
+// Now lets see how the communications betweens the two parties (client / frontend <----> http server / backend application ) will happens
+
+// 1. Communication from the client side (sending request / data from the client to the backend application)
+// -> Which protocol the backend application is using this will be mentioned in the URL
+// -> Url of the server (where are server is started)
+// -> Route
+// -> header, body, query params
+// -> Method
+
+// The backend applications are always used to do some computation that is provided by the client / frontend
+// the frontend application always send request / data to the backend application => alwaays require URL 
+
+// 2. Communication from the Server Side ( sending response / data from the backend application to the client)
+// -> Response Headers (most of time will be when hitting the server for the first time)
+// -> response body
+// -> Status code
+
+
+// In http protocol, the communication starts always starts from the client side because its know the address (URL or complicate with IP) of the http server 
+
+// IP address are the ways using which the one machine can find other machine over the internet
+
+// when sending the request to the http server , the browser converts the URL using the DNS resolution into the IP address of the machine where server is started
