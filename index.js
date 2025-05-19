@@ -28,10 +28,10 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 
 // 1. Communication from the client side (sending request / data from the client to the backend application)
 // -> Which protocol the backend application is using this will be mentioned in the URL
-// -> Url of the server (where are server is started)
+// -> Url of the server (where are server is started) / IP / Ports
 // -> Route
 // -> header, body, query params
-// -> Method
+// -> Method (get, post, put, delete)
 
 // The backend applications are always used to do some computation that is provided by the client / frontend
 // the frontend application always send request / data to the backend application => alwaays require URL 
@@ -39,11 +39,11 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 // 2. Communication from the Server Side ( sending response / data from the backend application to the client)
 // -> Response Headers (most of time will be when hitting the server for the first time)
 // -> response body
-// -> Status code
+// -> Status code 
 
 
 // In http protocol, the communication starts always starts from the client side because its know the address (URL or complicate with IP) of the http server 
 
 // IP address are the ways using which the one machine can find other machine over the internet
 
-// when sending the request to the http server , the browser converts the URL using the DNS resolution into the IP address of the machine where server is started
+// when sending the request to the http server , the browser converts the URL using the DNS resolution into the IP address of the machine where server is started and hence send the request to the machine where the application is started
