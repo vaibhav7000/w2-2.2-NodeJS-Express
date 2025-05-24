@@ -3,7 +3,7 @@
 console.log(`Hello Node.js v${process.versions.node}!`);
 
 
-// ecmascript -> website / organisation that writes the docs / specification for all the scripting lanaguages like JS. All the theoratical stuff related to JS like Number, Booleans, Promise, Strings, arrays, Objects etc will be written by the ECMA.
+// ecmascript -> website / organisation that writes the docs / specification for all the scripting lanaguages like JS. All the theoratical stuff related to JS like Number, Booleans, Promise, Strings, arrays, Objects etc is written by the ECMA.
 // JS is scripting language that is based on the docs of the ECMA => it conforms to the docs
 
 // NodeJS is the runtime / compiler (converts JS code into 0's and 1's) for the JS => whosoever is making the the compiler for the JS should implement the compiler according to the ecmascript docs for JS. NodeJS is based on the chromes V8 engine (compiler for JS on google chrome) + extra functionaly like 
