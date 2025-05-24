@@ -12,7 +12,7 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 
 // Using NodeJS (that provides the environment to run the JS outside the browser) we can build backend applications like CLIS, Video-Player, mobile-apps, networking applications(these communicates with other machines over the internet using a protocol) (http server) using JS
 
-// backend-applications are processes / programs that runs on machine not on the browser
+// backend-applications are processes / programs that runs on machine directly not on the browser
 
 // NodeJS will be used to create backend application (programs / process that runs on the machine) and the most important is the networking application (http server)
 
@@ -26,12 +26,25 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 
 // Now lets see how the communications betweens the two parties (client / frontend <----> http server / backend application ) will happens
 
+// Through NodeJS we will be building backend applications like CLIS, VIDEO-PLAYER, MOBILE-APPS, NETWORKING APPLICATIONS (programs/ process that runs on the machine directly) in Javascript
+// The most important backend application is Networking applications (these applications are used to communicate with other machine over the internet based on some protcols (http, webrtc))
+// Protocols provides rules and regulations based on which we need to communicate with other machine and for the other machines too
+
+// if the networking application is using http protocol then we call that as http server
+
+// After creating the backend application we will host the application on the other machine that will be connected to the internet (public IPS and map that with a dommain name) and the client will always sends the request
+
+// In http protocol, the communication starts always from the client side because its know the address (URL or complicate with IP) of the http server 
+
+// These are the protocol rules that we need to follow if the networking application follows http
 // 1. Communication from the client side (sending request / data from the client to the backend application)
-// -> Which protocol the backend application is using this will be mentioned in the URL
+// -> Which protocol the backend application is using this will be mentioned in the URL / domainName
 // -> Url of the server (where are server is started) / IP / Ports
-// -> Route
-// -> header, body, query params
+// -> Route (/ ,/addTodo, /deleteTodo, /updateTodo) different end points on which the frontend / client will hit, these will always comes after the URL / domainName
+// -> header, body, query params (where the client will attaching the data)
 // -> Method (get, post, put, delete)
+
+// URL -> http://vaibhavchawla.com http is the procotol, / is the route, by default the method would be get, url vaibhavchawla.com 
 
 // The backend applications are always used to do some computation that is provided by the client / frontend
 // the frontend application always send request / data to the backend application => alwaays require URL 
@@ -42,8 +55,8 @@ console.log(`Hello Node.js v${process.versions.node}!`);
 // -> Status code 
 
 
-// In http protocol, the communication starts always starts from the client side because its know the address (URL or complicate with IP) of the http server 
-
 // IP address are the ways using which the one machine can find other machine over the internet
 
 // when sending the request to the http server , the browser converts the URL using the DNS resolution into the IP address of the machine where server is started and hence send the request to the machine where the application is started
+
+// NodeJS provides us http module (like fs module) using which we can build the networking application (http server), But we will be using express that uses the same http module of NodeJS and makes the thing easy
